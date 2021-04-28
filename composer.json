@@ -1,10 +1,10 @@
 {
-    "name": "johnny/aliyunsls-for-laravel",
+    "name": "johnnylib/aliyunsls-for-laravel",
     "description": "AliyunSLS for laravel",
     "authors": [
         {
             "name": "johnny",
-            "email": "lcjunself@163.com"
+            "email": ""
         }
     ],
     "require": {},
