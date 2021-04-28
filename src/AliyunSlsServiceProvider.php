@@ -1,6 +1,6 @@
 <?php
 
-namespace Johnny\AliyunSls;
+namespace Johnnylib\AliyunSls;
 
 use Illuminate\Support\ServiceProvider;
 

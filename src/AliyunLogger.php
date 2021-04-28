@@ -1,6 +1,6 @@
 <?php
 
-namespace Johnny\AliyunSls;
+namespace Johnnylib\AliyunSls;
 
 /**
  * Class AliyunLog

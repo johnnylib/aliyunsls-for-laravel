@@ -1,6 +1,6 @@
 <?php
 
-namespace Johnny\AliyunSls\Facades;
+namespace Johnnylib\AliyunSls\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

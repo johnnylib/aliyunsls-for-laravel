@@ -2,8 +2,6 @@
 
 return [
 
-    'options' => [],
-
     'endpoint' => env('ALIYUN_SLS_ENDPOINT', ''),
 
     'access_key' => env('ALIYUN_SLS_ACCESS_KEY', ''),
