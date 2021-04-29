@@ -2,10 +2,6 @@
 
 namespace Johnnylib\AliyunSls;
 
-/**
- * Class AliyunLog
- * @package Johnny\AliyunSls
- */
 class AliyunLogger
 {
     private $logger;
