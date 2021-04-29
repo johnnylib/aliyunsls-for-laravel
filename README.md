@@ -1,23 +1,42 @@
-# 阿里云日志服务 Aliyun Sls
+# Aliyunsls for laravel
+
+
+
+## 运行环境
+
+- php `^7.0`
+
+- Laravel `^6.0`
+
+  
 
 ## 安装
 
-1.推荐使用composer安装，执行如下命令
-```bash
- composer require johnnylib/aliyunsls-for-laravel
+1. 推荐使用composer安装，执行如下命令
 ```
-2. 注册Laravel服务， config/app.php 添加
-```bash
-  \Johnnylib\AliyunSls\AliyunSlsServiceProvider::class
+composer require johnnylib/aliyunsls-for-laravel
+```
+
+2. 注册Laravel服务， 在config/app.php 添加
+
+```php
+'providers' => [
+    // ...
+    'Johnnylib\AliyunSls\AliyunSlsServiceProvider::class',
+]
 ```
 添加aliases配置
 
-```bash
-'Sls' => \Johnnylib\AliyunSls\Facades\Sls::class
+```php
+'aliases' => [
+    // ...
+    'Sls' => Johnnylib\AliyunSls\Facades\Sls::class,
+]
+
 ```
 
-3. 发布服务提供者资源
-```bash
+3. 发布资源，在config目录下生成一个aliyunsls.php文件
+```
   php artisan vendor:publish --provider="Johnnylib\AliyunSls\AliyunSlsServiceProvider"
 ```
 ## 添加配置项
@@ -30,12 +49,12 @@ return [
     'access_secret' => env('ALIYUN_SLS_ACCESS_SECRET', ''),
     'project' => env('ALIYUN_SLS_PROJECT', ''),
     'default_logstore' => env('','test'),
-];
+]
 
 ```
 
-## Demo
-Sls Facade类提供了不同种日志级别
+## 使用举例
+Sls Facade类提供了不同种日志级别写入函数：
 
 ```PHP
 Sls::info();
